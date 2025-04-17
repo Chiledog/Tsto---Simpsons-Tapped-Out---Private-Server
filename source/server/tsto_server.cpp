@@ -42,7 +42,7 @@ namespace tsto {
                protocol = "https";
            }
 
-           if (platform == "ios") {
+           if (platform == "iphone") {
                doc.AddMember("bundleId", "com.ea.simpsonssocial.inc2", allocator);
                logger::write(logger::LOG_LEVEL_DEBUG, logger::LOG_LABEL_GAME,
                    "[DIRECTION] Platform is iOS, bundleId set to: com.ea.simpsonssocial.inc2");
@@ -109,7 +109,7 @@ namespace tsto {
            }
 
            std::vector<std::pair<const char*, std::string>> initialEntries;
-           if (platform == "ios") {
+           if (platform == "iphone") {
                initialEntries = {
                    {"antelope.rtm.host", rtm_host},
                    {"applecert.url", "https://www.apple.com/appleca/AppleIncRootCertificate.cer"},
